@@ -1,0 +1,16 @@
+.cardw {
+  margin: auto;
+  max-width: 1000px;
+}
+.allcard {
+  text-align: center;
+  margin-top: 20px;
+}
+.imgsize {
+  margin-top: 15px;
+  width: 100px;
+  height: 100px;
+}
+.carduse {
+  max-width: 540px;
+}

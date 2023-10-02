@@ -1,0 +1,33 @@
+DOTO:
+
+1. ipuspass => resetPassword
+2. use only material-ui
+3. craeate validate like in signin component => src/auth/Signin.tsx ( example )
+4. create a route in server to get post request with email as a body param and not path param
+5. validate is server you have user with this email => 
+const user = await User.findOne({email})
+if(!user){
+    return res.status(404).json({message: "User Not Exists"})
+}
+6. return user id the render the new password page in react
+
+load new password page, and user fill the inputs
+-----------------------------------------------------------
+7. build the page with material ui
+8. validate the new password is strong
+9. put request from client to server
+10. server side route know to acept the request
+11. update the user data with encript to password
+
+const user = await User.findOneAndUpdate({_id: userId}, {password: newpassword})
+if(!user){
+    404
+}
+12. return to login page
+
+
+path paramter => localhost:3000/users/:id
+
+query paramter => localhost:3000/users?id=dfhadfkadfhk
+
+body paramter => localhost:3000/users
